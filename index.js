@@ -52,7 +52,14 @@ app.use(
 
 app.use(
   cors({
-    origin: "*",
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:5173",
+      "test-frontend-gjx4.vercel.app",
+      "test-frontend-gjx4-muhammad-jahangirs-projects-3f11093d.vercel.app",
+      "test-frontend-g-git-3ecf29-muhammad-jahangirs-projects-3f11093d.vercel.app",
+      "test-frontend-gjx4-mhwwxksgb.vercel.app"
+    ],
     //  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     // allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
     // exposedHeaders: ["Content-Length", "Authorization"],
